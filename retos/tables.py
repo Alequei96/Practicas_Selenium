@@ -41,7 +41,7 @@ class Tables(unittest.TestCase):
                 row_data = driver.find_element(By.XPATH, f'/html/body/div[2]/div/div/table[1]/tbody/tr[{j + 1}]/td[{i+ 1}]')
                 #Manera de lista
                 table_data[i].append(row_data.text)
-                #Manera de diccionario con listas
+                #Manera de diccionario con
                 table_data_dic[header.text].append(row_data.text)
 
         print(table_data)
